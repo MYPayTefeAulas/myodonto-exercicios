@@ -1,2 +1,3 @@
-# myodonto-agenda
-App de Agenda para exercitar a criação de apps
+# Exercícios Grupo MyOdonto
+
+Apps diversos para exercitar a criação de apps

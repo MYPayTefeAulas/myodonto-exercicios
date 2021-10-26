@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgendaGeral">
         <activity
-            android:name=".EditarContatoActivity"
+            android:name=".agenda_v2.AgendaV2Activity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,12 @@
         </activity>
 
         <activity
-            android:name=".TelaInicialActivity"
+            android:name=".agenda_v1.EditarContatoActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".agenda_v1.TelaInicialActivity"
             android:exported="true">
 
         </activity>

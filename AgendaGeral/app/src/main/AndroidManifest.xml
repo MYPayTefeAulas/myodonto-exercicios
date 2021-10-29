@@ -10,26 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgendaGeral">
         <activity
+            android:name=".agenda_v3.EditarContato3Activity"
+            android:exported="true" />
+        <activity
+            android:name=".agenda_v3.AgendaV3Activity"
+            android:exported="true" />
+        <activity
             android:name=".agenda_v2.AgendaV2Activity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".agenda_v1.EditarContatoActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".agenda_v1.TelaInicialActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

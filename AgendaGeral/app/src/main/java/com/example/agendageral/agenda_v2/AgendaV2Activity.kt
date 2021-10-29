@@ -18,6 +18,9 @@ class AgendaV2Activity : AppCompatActivity() {
 
         binding = ActivityTelaInicialV2Binding.inflate(layoutInflater)
         title = "Agenda V2"
+        binding.rvTelaInicial.layoutManager = LinearLayoutManager(this)
+        binding.rvTelaInicial.adapter = ContatoAdapterRecycleView(Agenda_V2.lintaDeContatos)
+        binding.rvTelaInicial.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
 
         Agenda_V2.lintaDeContatos.add(Contato_v2("Luiz Felipe",1111))
         Agenda_V2.lintaDeContatos.add(Contato_v2("Gabriela lima",100000))
@@ -35,9 +38,7 @@ class AgendaV2Activity : AppCompatActivity() {
         Agenda_V2.lintaDeContatos.add(Contato_v2("Emersson",521321))
         Agenda_V2.lintaDeContatos.add(Contato_v2("Maick",5654121))
 
-        binding.rvTelaInicial.layoutManager = LinearLayoutManager(this)
-        binding.rvTelaInicial.adapter = ContatoAdapterRecycleView(Agenda_V2.lintaDeContatos)
-        binding.rvTelaInicial.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
+
 
         setContentView(binding.root)
     }

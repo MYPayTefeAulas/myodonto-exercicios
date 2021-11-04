@@ -10,12 +10,19 @@
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_agenda_v3.xml" value="0.24864130434782608" />
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_editar_contato.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_editar_contato3.xml" value="0.22916666666666666" />
+        <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_editar_contatov4.xml" value="0.2504528985507246" />
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_tela_de_inicio.xml" value="0.2463768115942029" />
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_tela_inicial_V1.xml" value="0.2477355072463768" />
+        <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_tela_inicial_agenda_v4.xml" value="0.264" />
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_tela_inicial_v1.xml" value="0.1" />
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/activity_tela_inicial_v2.xml" value="0.24864130434782608" />
+        <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/fragments_ajustes.xml" value="0.536" />
+        <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/fragmet_lista_ctts.xml" value="0.2463768115942029" />
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/item_lista_ctts.xml" value="0.536" />
         <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/item_lista_ctts_v3.xml" value="0.24864130434782608" />
+        <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/layout/item_lista_cttsv4.xml" value="0.264" />
+        <entry key="..\:/Users/luizs/git/myodonto-exercicios/AgendaGeral/app/src/main/res/menu/navigation_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
@@ -24,5 +31,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.24864130434782608" />
+      </ProjectState>
+    </option>
   </component>
 </project>

@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.agendageral.databinding.ItemListaCttsV3Binding
 
 class ContatoAdapter_v3(
+
     val listaDeContato_v3: MutableList<Contato_v3>,
     val onBtItemClick: (Int) -> Unit):
     RecyclerView.Adapter<ContatoAdapter_v3.ViewHolder>() {

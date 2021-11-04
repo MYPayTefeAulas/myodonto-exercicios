@@ -15,7 +15,6 @@ class AgendaV3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAgendaV3Binding.inflate(layoutInflater)
-        title = "Agenda V3"
         adapter = ContatoAdapter_v3(mutableListOf(), ::onBtItemClick)
 
         Agenda_v3.listaContato_v3.add(Contato_v3("Luiz Soares", 65656))

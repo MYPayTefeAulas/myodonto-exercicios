@@ -37,22 +37,11 @@ class TelaInicialActivity : AppCompatActivity() {
 
         binding.txtListView.adapter = adapter
 
-//        adapter.notifyDataSetChanged()
-
-//        binding.txtListView.setOnItemClickListener { adapterView, view, posicao, l ->
-//            var intent = Intent(this, EditarContatoActivity::class.java)
-//            intent.putExtra("indice", posicao)
-//            startActivity(intent)
-//        }
 
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-//
-//       Toast.makeText(this, "Bem vindo a sua Agenda!", Toast.LENGTH_LONG).show()
+      Toast.makeText(this, "Bem vindo a sua Agenda!", Toast.LENGTH_LONG).show()
     }
 
-//    override fun onResume() {
-//        super.onResume()
-//        adapter.notifyDataSetChanged()
-//    }
+
 }

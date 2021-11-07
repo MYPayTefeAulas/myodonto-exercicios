@@ -61,8 +61,6 @@ class ListaContatoFragment: Fragment() {
         val intent = Intent(context,EditarContatoActivity::class.java)
         intent.putExtra("indiceAtual", indiceListaV4)
         startActivity(intent)
-        intent.putExtra("nome", AgendaV4.listaCttV4[indiceListaV4].nome )
-        intent.putExtra("nome", AgendaV4.listaCttV4[indiceListaV4].telefone )
 
     }
 

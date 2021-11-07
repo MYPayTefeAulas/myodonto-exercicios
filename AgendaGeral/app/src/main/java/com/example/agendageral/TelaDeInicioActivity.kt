@@ -6,6 +6,8 @@ import android.os.Bundle
 import com.example.agendageral.agenda_v1.TelaInicialActivity
 import com.example.agendageral.agenda_v3.AgendaV3Activity
 import com.example.agendageral.agenda_v4.TelaInicialAgendaV4Activity
+import com.example.agendageral.agenda_v5.TelaInicioV5Activity
+import com.example.agendageral.databinding.ActivityEditarContatoV5Binding
 import com.example.agendageral.databinding.ActivityTelaDeInicioBinding
 
 class TelaDeInicioActivity : AppCompatActivity() {
@@ -28,6 +30,10 @@ class TelaDeInicioActivity : AppCompatActivity() {
         }
         binding.btVersao4.setOnClickListener {
             val intent = Intent(this, TelaInicialAgendaV4Activity::class.java)
+            startActivity(intent)
+        }
+        binding.btVersao5.setOnClickListener {
+            val intent = Intent(this, TelaInicioV5Activity::class.java)
             startActivity(intent)
         }
 

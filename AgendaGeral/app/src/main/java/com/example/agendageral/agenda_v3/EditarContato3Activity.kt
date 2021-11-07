@@ -8,6 +8,7 @@ import com.example.agendageral.databinding.ActivityEditarContato3Binding
 class EditarContato3Activity : AppCompatActivity() {
 
     private lateinit var binding: ActivityEditarContato3Binding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

@@ -1,7 +1,6 @@
 package com.example.agendageral.agenda_v5
-
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import com.example.agendageral.R
 import com.example.agendageral.agenda_v4.AjustesFragments
 import com.example.agendageral.databinding.ActivityTelaInicioV5Binding

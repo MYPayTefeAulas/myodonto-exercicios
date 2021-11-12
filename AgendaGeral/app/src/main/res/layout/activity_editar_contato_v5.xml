@@ -32,10 +32,23 @@
         android:id="@+id/btSalvarCttV5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="#16D61E"
         android:text="Salvar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEditarTelefoneV5" />
+
+    <Button
+        android:id="@+id/btDeletarV5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#F62650"
+        android:text="Deletar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSalvarCttV5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

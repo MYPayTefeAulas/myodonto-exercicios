@@ -9,4 +9,20 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="salvar">Salvar</string>
+    <string name="name">Name</string>
+    <string name="deletar">Deletar</string>
+    <string name="editar">Editar</string>
+    <string name="deletar_contato">Delelar Contato?</string>
+    <string name="deseja_deletar_contato">Deseja de fato deletar esse contato ?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="contato_removido">Contato foi deletado</string>
+    <string name="contato_salvo">Contato Salvo</string>
+    <string name="editar_contato">Editar Contato</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="ordem_alfabetica">Ordem alfabética</string>
+    <string name="afabetica_az">Afabética A-Z</string>
+    <string name="alfabetica_za">Afabética Z-A</string>
+    <string name="ordem_insercao">Ordem de inserção</string>
+    <string name="ordenacao_contatos">Ordenação dos Contatos</string>
 </resources>

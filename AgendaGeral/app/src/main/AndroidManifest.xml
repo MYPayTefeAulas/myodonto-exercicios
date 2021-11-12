@@ -10,13 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AgendaGeral">
         <activity
+            android:name=".agenda_v6.EditarContatoV6Activity"
+            android:exported="true" />
+        <activity
+            android:name=".agenda_v6.AgendaTelaInicioV6Activity"
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
+        <activity
             android:name=".agenda_v5.EditarContatoV5Activity"
             android:exported="true" />
         <activity
             android:name=".agenda_v5.TelaInicioV5Activity"
             android:exported="true"
             android:label="@string/title_activity_tela_inicio_v5"
-            android:theme="@style/NoActionBar"/>
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".TelaDeInicioActivity"
             android:exported="true">
@@ -31,7 +38,8 @@
             android:exported="true" />
         <activity
             android:name=".agenda_v4.TelaInicialAgendaV4Activity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".agenda_v3.EditarContato3Activity"
             android:exported="true" />

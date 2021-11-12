@@ -7,16 +7,6 @@
     android:background="#F4EFEF"
     android:backgroundTint="#F1EEEE">
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="24dp"
-        android:text="Switch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
@@ -29,4 +19,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="Ajustes" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="68dp"
+        android:text="@string/ordem_alfabetica"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="108dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

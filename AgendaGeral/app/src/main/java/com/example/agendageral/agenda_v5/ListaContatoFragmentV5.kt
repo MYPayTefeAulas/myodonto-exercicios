@@ -1,14 +1,11 @@
 package com.example.agendageral.agenda_v5
-
 import android.content.Intent
 import android.os.Bundle
-import android.provider.CalendarContract
-import android.provider.CalendarContract.Attendees.query
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.SearchView
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -33,29 +30,20 @@ class ListaContatoFragmentV5: Fragment(), SearchView.OnQueryTextListener {
 
         adapter = ContatoAdapterV5(mutableListOf(), ::onBtItemClick)
 
+        AgendaV5.listaContatoV5.add(ContatoV5("Monckei D. Luffy", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Roronoa Zoro", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Ussopp", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Nami", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Sanji", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Robin", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Chopper", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Franklin", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Shanks", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Olhos de Falcão", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Grap", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Ace", "76"))
+        AgendaV5.listaContatoV5.add(ContatoV5("Sabo", "76"))
 
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("Luis", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("Maria Rossild", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
-        AgendaV5.listaContatoV5.add(ContatoV5("José Soares", "76"))
 
 
         binding.rvlistaContatosv5.layoutManager = LinearLayoutManager(context)
@@ -86,7 +74,6 @@ class ListaContatoFragmentV5: Fragment(), SearchView.OnQueryTextListener {
     }
 
     override fun onQueryTextChange(newText: String?): Boolean {
-        Toast.makeText(context,"escrevi $newText", Toast.LENGTH_SHORT).show()
         return onQueryTextSubmit(newText)
     }
 

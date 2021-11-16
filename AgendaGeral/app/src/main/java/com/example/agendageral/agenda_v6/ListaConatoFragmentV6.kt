@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.agendageral.R
 import com.example.agendageral.databinding.FragmentListaContatosV6Binding
+import com.example.agendageral.enums.TipoOrdenacao
 
 class ListaConatoFragmentV6: Fragment(), SearchView.OnQueryTextListener {
     private var _binding: FragmentListaContatosV6Binding? = null
@@ -84,19 +85,19 @@ class ListaConatoFragmentV6: Fragment(), SearchView.OnQueryTextListener {
 
     private fun carregarLista() {
         val config = requireActivity().getSharedPreferences("configuracoes", 0)
-        val radioGroupOrdenacaoSelecionada_id =
-            config.getInt("ordenacaoContatos", R.id.radioOrdenacaoInsercao)
+        val tipoOrdenacao_str = config.getString("TipoOrdenacaoContatos",TipoOrdenacao.ALFABETICA_AZ.toString())
+        val tipoOrdenacao: TipoOrdenacao = TipoOrdenacao.valueOf(tipoOrdenacao_str!!)
 
-        when (radioGroupOrdenacaoSelecionada_id) {
-            R.id.radioOrdenacaoAZ -> {
+        when (tipoOrdenacao) {
+            TipoOrdenacao.ALFABETICA_AZ -> {
                 val listaOrdenada = Agenda_V6.listaContatos_V6.sortedBy { it.nome }
                 adapterV6.swapData(listaOrdenada)
             }
-            R.id.radioOrdenacaoZA -> {
+            TipoOrdenacao.ALFABETICA_ZA -> {
                 val listaOrdenada = Agenda_V6.listaContatos_V6.sortedByDescending { it.nome }
                 adapterV6.swapData(listaOrdenada)
             }
-            else -> {
+            TipoOrdenacao.ORDEM_INSERCAO -> {
                 adapterV6.swapData(Agenda_V6.listaContatos_V6)
             }
         }

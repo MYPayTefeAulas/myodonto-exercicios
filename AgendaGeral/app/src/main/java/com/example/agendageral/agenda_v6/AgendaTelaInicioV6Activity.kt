@@ -3,8 +3,6 @@ package com.example.agendageral.agenda_v6
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.agendageral.R
-import com.example.agendageral.agenda_v5.AgendaV5
-import com.example.agendageral.agenda_v5.ContatoV5
 import com.example.agendageral.databinding.ActivityAgendaTelaInicioV6Binding
 
 class AgendaTelaInicioV6Activity : AppCompatActivity() {

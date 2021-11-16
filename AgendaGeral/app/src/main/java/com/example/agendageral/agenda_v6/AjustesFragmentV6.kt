@@ -13,6 +13,7 @@ import com.example.agendageral.databinding.FragmentAjustesV5Binding
 import com.example.agendageral.databinding.FragmentAjustesV6Binding
 import com.example.agendageral.databinding.FragmentoAjustesV6Binding
 import com.example.agendageral.databinding.FragmentsAjustesBinding
+import com.example.agendageral.enums.TipoOrdenacao
 
 class AjustesFragmentV6: Fragment() {
 
@@ -24,31 +25,37 @@ class AjustesFragmentV6: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentoAjustesV6Binding.inflate(inflater, container, false)
-
+        val view = binding.root
         val config = requireActivity().getSharedPreferences("configuracoes", 0)
-        
-        binding.radioGroupOrdenacao.setOnCheckedChangeListener { _, checkedId ->
-            val editor = config.edit()
-            editor.putInt("ordenacaoContatos", checkedId)
-            editor.apply()
+
+        val tipoOrdenacaoSelecionada_str = config.getString(
+            "TipoOrdenacaoContatos",
+            TipoOrdenacao.ALFABETICA_AZ.toString()
+        )
+        val tipoOrdenacao: TipoOrdenacao = TipoOrdenacao.valueOf(tipoOrdenacaoSelecionada_str!!)
+
+        when(tipoOrdenacao){
+            TipoOrdenacao.ALFABETICA_AZ -> binding.radioOrdenacaoAZ.isChecked = true
+            TipoOrdenacao.ALFABETICA_ZA -> binding.radioOrdenacaoZA.isChecked = true
+            TipoOrdenacao.ORDEM_INSERCAO-> binding.radioOrdenacaoInsercao.isChecked = true
         }
 
-        return binding.root
-    }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        binding.radioGroupOrdenacao.setOnCheckedChangeListener { _, checkedId ->
+            val novoTipoOrdenacao = when(checkedId){
+                binding.radioOrdenacaoAZ.id ->  TipoOrdenacao.ALFABETICA_AZ.toString()
+                binding.radioOrdenacaoZA.id ->  TipoOrdenacao.ALFABETICA_ZA.toString()
+                binding.radioOrdenacaoInsercao.id -> TipoOrdenacao.ORDEM_INSERCAO.toString()
+                else ->  TipoOrdenacao.ALFABETICA_AZ.toString()
+            }
+            val editor = config.edit()
+            editor.putString("TipoOrdenacaoContatos", novoTipoOrdenacao)
+            editor.apply()
 
-        val config = requireActivity().getSharedPreferences("configuracoes", 0)
+        }
 
-        val radioGroupOrdenacaoSelecionada_id = config.getInt("ordenacaoContatos", R.id.radioOrdenacaoInsercao)
-        val radioGroupOrdenacaoSelecionada_view = requireView().findViewById<RadioButton>(radioGroupOrdenacaoSelecionada_id)
-
-        radioGroupOrdenacaoSelecionada_view.isChecked = true
-
-
-
+        return view
     }
 }
